@@ -357,10 +357,10 @@ icon-socials-list{
   display: inline;
 }
 .icon-socials-team {
-  /*display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  gap: 24px;*/
+  gap: 24px;
   fill: var(--cloud);
 }
 .icon-socials-box {
