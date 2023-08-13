@@ -353,15 +353,7 @@ button {
   text-align: center;
   margin-bottom: 8px;
 }
-.icon-social-blok {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
-}
-.icon-socials-list {
-  display: inline;
-}
+
 .icon-socials-item {
   display: inline;
 }
