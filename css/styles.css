@@ -378,8 +378,8 @@ icon-socials-list{
 .icon-social {
   fill: var(--cloud);
 }
-.icon-social:hover,
-.icon-social:focus {
+.icon-social-link:hover,
+.icon-social-link:focus {
   cursor: pointer;
   background-color: var(--OCEAN);
 }
