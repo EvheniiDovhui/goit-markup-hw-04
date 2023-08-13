@@ -54,12 +54,6 @@ img {
   color: var(--OCEAN);
 }
 
-.all-btn:hover,
-.all-btn:focus {
-  border: 1px solid transparent;
-  color: var(--WHITE);
-  background-color: var(--OCEAN);
-}
 /* BUTTONS */
 button {
   cursor: pointer;
@@ -89,18 +83,7 @@ button {
   color: var(--WHITE);
   background-color: var(--OCEAN);
 }
-.all-btn {
-  color: var(--iris, #4d5ae5);
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.04em;
-  background: var(--cloud, #f4f4fd);
-  padding: 12px 24px;
-  border: 1px solid #e7e9fc;
-  border-radius: 4px;
-}
+
 /* HEADER MAIN STYLES */
 .header-block {
   flex-shrink: 0;
@@ -468,6 +451,30 @@ button {
   gap: 24px;
   margin-bottom: 72px;
 }
+.all-btn {
+  color: var(--iris, #4d5ae5);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: var(--cloud, #f4f4fd);
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.all-btn:hover,
+.all-btn:focus {
+  border: 1px solid transparent;
+  color: var(--WHITE);
+  background-color: var(--OCEAN);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
 .row-item-dscrp-container {
   padding: 32px 16px;
   border: 1px solid var(--cornflower, #e7e9fc);
@@ -555,6 +562,7 @@ button {
 }
 .footer {
   display: flex;
+  align-items: baseline;
 }
 .logo-footer {
   display: inline-block;
