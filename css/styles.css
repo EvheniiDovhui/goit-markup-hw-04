@@ -161,7 +161,7 @@ button {
 .nav {
   position: relative;
   color: var(--Iris);
-  
+
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
@@ -387,8 +387,8 @@ button {
 .icon-social {
   fill: var(--cloud);
 }
-.icon-social-link:hover,
-.icon-social-link:focus {
+.icon-socials-link:hover,
+.icon-socials-link:focus {
   cursor: pointer;
   background-color: var(--OCEAN);
 }
@@ -564,7 +564,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translate(-50%, -50%) scale(1);
 
   width: 408px;
   min-height: 584px;
@@ -574,7 +574,8 @@ button {
   background: var(--dairy, #fcfcfc);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14);
-  transition: transform 250ms ease-in 500ms, opacity 250ms ease-in 500ms;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden .modal {
   transform: translateX(-50%) translateY(-70%);
@@ -582,8 +583,8 @@ button {
 }
 .modal-btn {
   position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 24px;
+  right: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -594,6 +595,8 @@ button {
   stroke-width: 1px;
   border-radius: 50%;
   border-color: rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-btn:hover,
 .modal-btn:focus {
