@@ -390,7 +390,7 @@ button {
   gap: 24px;
   
 }
-.costomers-icon-item .list {
+.costomers-icon-list .list {
   width: calc((100% - 120px) / 6);
   height: 88px;
 }
