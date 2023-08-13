@@ -385,7 +385,7 @@ button {
   letter-spacing: 0.72px;
   text-transform: capitalize;
 }
-.costomers-icon-list.list {
+.costomers-icon-list {
   display: flex;
   gap: 24px;
   
